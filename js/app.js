@@ -1,9 +1,9 @@
 var productBank = [
   {
-    title:       'Go Ship GO',
-    projectUrl:   'https://github.com/paulsheridan/go-ship-go',
-    publishedDate: '2015-11-05',
-    description:        '<p>A simple game about a simple spaceship.</p>'
+    title: 'Go Ship GO',
+    projectUrl: 'https://github.com/paulsheridan/go-ship-go',
+    publishedDate: '2015-04-09',
+    description: '<p>A simple game about a simple spaceship.</p>'
   },
 ];
 
@@ -18,7 +18,7 @@ function Project (details) {
 
 Project.prototype.postToSite = function(){
   var $newProject = $('article.template').clone();
-  $newProject.data('title', this.title);
+  $newProject.data('', this.title);
   $newProject.removeClass('template');
   return $newProject;
 };
@@ -27,5 +27,5 @@ productBank.forEach(function(ele) {
 });
 
 projects.forEach(function(a){
-  $('#projects').append(a.postToSite());
+  $('#portfolio').append(a.postToSite());
 });

@@ -3,3 +3,7 @@
   flex-direction: row;
   justify-content: space-around;
 }
+ul
+{
+    list-style-type: none;
+}

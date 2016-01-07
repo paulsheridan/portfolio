@@ -6,8 +6,14 @@ pageView.mainNav = function() {
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
   });
-
   $('.nav-bar .tab:first').click();
 };
 
+pageView.toggleNav = function(){
+  $('.hamburger').on('click', function(){
+  $('nav ul').toggle();
+  })
+};
+
 pageView.mainNav();
+pageView.toggleNav();

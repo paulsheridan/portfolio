@@ -1,0 +1,80 @@
+/*body * {
+  border: 1px dotted;
+}*/
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  background-color: rgb(22, 149, 163);
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: rgb(241, 244, 85);
+}
+
+.header-content {
+  background-color: rgb(44, 149, 163);
+}
+
+.header-content h1 {
+  display: inline;
+}
+
+.header-content a {
+  display: inline;
+  float: right;
+  font-size: 15;
+}
+
+.template {
+  display: none;
+}
+
+.nav-bar ul {
+  list-style: none;
+  background-color: rgb(44, 149, 163);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav-bar li {
+  line-height: 30px;
+  height: 30px;
+  border-bottom: 1px solid rgb(22, 149, 163);
+}
+
+.nav-bar a {
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: .3s background-color;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  background-color: rgb(241, 244, 85);
+}
+
+.nav-bar a.active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+@media screen and (min-width: 640px) {
+  .nav-bar li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

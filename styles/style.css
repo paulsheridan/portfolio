@@ -1,0 +1,20 @@
+body * {
+  border: 1px dotted;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.template {
+  display: none;
+}
+
+h1 {
+  background-color: rgb(44, 149, 163);
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: rgb(241, 244, 85);
+}

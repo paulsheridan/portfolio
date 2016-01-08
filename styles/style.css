@@ -17,6 +17,7 @@ h2 {
 
 .header-content {
   background-color: rgb(44, 149, 163);
+  height: 4em;
 }
 
 .header-content h1 {

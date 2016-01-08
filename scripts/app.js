@@ -13,6 +13,7 @@ Project.prototype.postProj = function(){
   var compiledTemplate = template(this);
   return compiledTemplate;
 };
+
 projectBank.forEach(function(ele) {
   projects.push(new Project(ele));
 });

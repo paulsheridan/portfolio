@@ -6,7 +6,7 @@ pageView.mainNav = function() {
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
   });
-  // $('.nav-bar .tab:first').click();
+  $('.nav-bar .tab:first').click();
 };
 
 pageView.toggleNav = function(){

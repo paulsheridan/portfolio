@@ -8,10 +8,9 @@ function Project (details) {
 }
 
 Project.prototype.postProj = function(){
-  var source = $("#project-template").html();
+  var source = $('#project-template').html();
   var template = Handlebars.compile(source);
-  var compiledTemplate = template(this);
-  return compiledTemplate;
+  return template(this);
 };
 
 projectBank.forEach(function(ele) {

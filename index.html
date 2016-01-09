@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width", initial-scale="1">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script id="project-template" type="text/x-handlebars-template">
       <article>
         <header>
@@ -21,18 +21,16 @@
   </head>
   <body>
     <header class="header-content">
-      <h1>Paul Sheridan</h1>
       <a href="#menu"><img src="styles/images/menu.svg" class="hamburger" alt=""></a>
+      <nav class="nav-bar">
+        <ul>
+          <li class="tab" data-content="portfolio"><a href="#" class="">Portfolio</a></li>
+          <li class="tab" data-content="about-me"><a href="#" class="">About Me</a></li>
+          <li class="tab" data-content="contact"><a href="#" class="">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Paul Sheridan</h1>
     </header>
-    <nav class="nav-bar">
-      <ul>
-        <li class="tab" data-content="about-me"><a href="#" class="">About Me</a></li>
-        <li class="tab" data-content="portfolio"><a href="#" class="">Portfolio</a></li>
-        <li><a href="https://github.com/paulsheridan">GitHub</a></li>
-        <li><a href="https://twitter.com/borealisrex">Twitter</a></li>
-        <li><a href="mailto:paulsemail@me.com">Email</a></li>
-      </ul>
-    </nav>
     <body>
       <section id="portfolio" class="tab-content">
       </section>
@@ -42,6 +40,13 @@
       </section>
     </body>
     <footer>
+      <ul class="contact">
+        <h2>Get at me</h2>
+        <li><a href="https://github.com/paulsheridan">GitHub</a></li>
+        <li><a href="https://twitter.com/borealisrex">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/profile/view?id=AAMAAAaUkqMBGM8RAgL645A7TCIVeNPy2yDCLHA&trk=hp-identity-name">linkedIn</a></li>
+        <li><a href="mailto:paulsemail@me.com">Email</a></li>
+      </ul>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
       <script src="scripts/projects.js"></script>

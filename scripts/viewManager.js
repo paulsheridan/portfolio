@@ -11,7 +11,7 @@ pageView.mainNav = function() {
 
 pageView.toggleNav = function(){
   $('.hamburger').on('click', function(){
-  $('nav ul').toggle();
+  $('nav ul').slideToggle();
   })
 };
 

@@ -15,5 +15,11 @@ pageView.toggleNav = function(){
   })
 };
 
+pageView.initPage = function(){
+  Project.all.forEach(function(a){
+    $('#portfolio').append(a.postProj());
+  });
+};
+
 pageView.mainNav();
 pageView.toggleNav();

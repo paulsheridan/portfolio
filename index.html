@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="styles/modules.css">
     <script id="project-template" type="text/x-handlebars-template">
       <article class="{{textClass}}">
-        <section>
+        <div>
           <h2 class="title">{{title}}</h2>
-          <div class="published">
-            Published: <time>{{publishedDate}}</time>
-          </div>
-        </section>
-        <section class="project-link"><a href="{{projectUrl}}">{{projectUrl}}</a></section>
-        <section class="description">{{{description}}}</section>
-        <a href="{{imageUrl}}"></a>
+          <a href="{{projectURL}}" class="project-link">{{projectURL}}</a>
+          <p class="published">Published: <time>{{publishedDate}}</time></p>
+          <p class="description">{{{description}}}</p>
+        </div>
+        <ul class="project-images">
+          <li><a href="" class="background-image"><img src="{{imgURL}}" alt=""></a></li>
+          <li><a href="" class="foreground-image"><img src="{{imgTWO}}" alt=""></a></li>
+        </ul>
       </article>
     </script>
   </head>
@@ -28,26 +29,26 @@
     <header class="header-content">
       <nav class="nav-bar">
         <ul>
-          <li class="tab" data-content="about-me"><a href="#" class="">About Me</a></li>
-          <li class="tab" data-content="portfolio"><a href="#" class="">Portfolio</a></li>
-          <li class="tab" data-content="contact"><a href="#" class="">Contact</a></li>
+          <li class="tab" data-content="about-me"><a href="#about-me" class="">About Me</a></li>
+          <li class="tab" data-content="portfolio"><a href="#portfolio" class="">Portfolio</a></li>
+          <li class="tab" data-content="contact"><a href="#contact" class="">Contact</a></li>
         </ul>
       </nav>
       <a href="index.html" id="nav-name">Paul Sheridan</a>
     </header>
-    <banner id="banner">
-      <h1>Hi, I'm Paul.</h1>
-    </banner>
-    <main id="">
-      <section id="about-me" class="tab-content">
+    <main>
+      <banner>
+        <h1>Sample Text</h1>
+      </banner>
+      <section id="about-me" class="about-me">
         <h2>About Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilis sunt tempora repellendus, veritatis rerum eveniet iure deserunt, quam nam saepe alias, nulla sequi perferendis, corporis dolor. Molestias, illum, amet?</p>
       </section>
-      <section id="portfolio" class="tab-content">
-      </section>
+      <div id="portfolio" class="portfolio">
+      </div>
     </main>
     <footer>
-      <ul class="contact">
+      <ul id="contact" class="contact" >
         <h2>Get at me</h2>
         <li><a href="https://github.com/paulsheridan"><img src="styles/images/github-circle-black.svg" alt=""></a></li>
         <li><a href="https://twitter.com/borealisrex"><img src="styles/images/twitter-circle-black.svg" alt=""></a></li>

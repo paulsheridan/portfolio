@@ -14,10 +14,10 @@ footer {
 }
 
 .header-content {
-  background-color: rgb(52, 152, 219);
+  background-color: rgb(44, 62, 80);
   width: 100%;
   display: block;
-  height: 4em;
+  height: 6em;
 }
 
 .template {
@@ -26,7 +26,6 @@ footer {
 
 .nav-bar ul {
   list-style: none;
-  background-color: rgb(52, 152, 219);
   padding: 0;
   margin: 0;
   text-align: center;
@@ -35,7 +34,7 @@ footer {
 .nav-bar li {
   line-height: 2em;
   height: 2em;
-  border-bottom: 1px solid rgb(52, 152, 219);
+  line-height: 1em;
   display: inline-block;
   margin-left: 1em;
   margin-right: 1em;
@@ -51,7 +50,7 @@ footer {
 }
 
 .nav-bar a:hover {
-  color: rgb(34, 83, 120);
+  color: rgb(52, 152, 219);
 }
 
 .title {
@@ -63,12 +62,11 @@ footer {
 }
 
 .contact a:hover {
-  opacity: .75;
+  opacity: .50;
 }
 
 #nav-name {
   font-family: 'Raleway', sans-serif;
-  background-color: rgb(52, 152, 219);
   color: rgb(255, 255, 255);
   float: left;
   font-size: 2em;
@@ -78,22 +76,34 @@ footer {
   line-height: 1.5em;
 }
 
-#banner {
+#about-me {
+}
+
+#about-me h1 {
   width: 100%;
-  height: 10em;
+  height: 5em;
   position: relative;
+  text-align: center;
+  background-color: rgb(231, 76, 60);
 }
 
 @media screen and (min-width: 640px) {
+  .header-content {
+    height: 4em;
+  }
+
+  .nav-bar a {
+    display: block;
+  }
 
   .nav-bar li {
-    width: 6em;
     border-bottom: none;
     height: 2.4em;
     line-height: 2.4em;
     font-size: 1.3em;
     display: inline-block;
-    margin-right: -.2em;
+    margin-right: 1em;
+    margin-left: 1em;
   }
 
   .nav-bar ul {

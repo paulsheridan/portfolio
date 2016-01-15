@@ -3,7 +3,10 @@
     this.title = details.title;
     this.publishedDate = details.publishedDate;
     this.description = details.description;
-    this.projectUrl = details.projectUrl;
+    this.projectURL = details.projectURL;
+    this.textClass = details.textClass;
+    this.imgURL = details.imgURL;
+    this.imgTWO = details.imgTWO;
   }
 
   Project.all = [];

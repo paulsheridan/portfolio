@@ -1,22 +1,26 @@
 (function(module) {
   pageView = {};
 
-  pageView.mainNav = function() {
-    $('.nav-bar').on('click', '.tab', function(event) {
-      event.preventDefault();
-      $('.tab-content').hide();
-      $('#' + $(this).data('content')).fadeIn();
-    });
-    $('.nav-bar .tab:first').click();
-  };
-
   pageView.initPage = function(){
     Project.all.forEach(function(a){
       $('#portfolio').append(a.postProj());
     });
   };
 
-  pageView.mainNav();
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
   module.pageView = pageView;
 })(window);

@@ -17,7 +17,7 @@ footer {
   background-color: rgb(44, 62, 80);
   width: 100%;
   display: block;
-  height: 6em;
+  height: 3.1em;
 }
 
 .template {
@@ -32,12 +32,11 @@ footer {
 }
 
 .nav-bar li {
-  line-height: 2em;
+  /*line-height: 2em;*/
   height: 2em;
   line-height: 1em;
   display: inline-block;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 1em;
   text-align: center;
 }
 
@@ -73,13 +72,14 @@ footer {
   text-decoration: none;
   text-align: center;
   display: block;
-  line-height: 1.5em;
+  line-height: 1.6em;
+  margin: 0 .5em;
 }
 
-#about-me {
+.about-me {
 }
 
-#about-me h1 {
+.about-me h1 {
   width: 100%;
   height: 5em;
   position: relative;
@@ -89,7 +89,7 @@ footer {
 
 @media screen and (min-width: 640px) {
   .header-content {
-    height: 4em;
+
   }
 
   .nav-bar a {
@@ -102,8 +102,7 @@ footer {
     line-height: 2.4em;
     font-size: 1.3em;
     display: inline-block;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin: 0 1em;
   }
 
   .nav-bar ul {

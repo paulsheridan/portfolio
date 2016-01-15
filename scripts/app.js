@@ -6,7 +6,7 @@
     this.projectURL = details.projectURL;
     this.textClass = details.textClass;
     this.imgURL = details.imgURL;
-    this.imgTWO = details.imgTWO;
+    // this.imgTWO = details.imgTWO;
   }
 
   Project.all = [];

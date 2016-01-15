@@ -5,8 +5,8 @@
     "publishedDate": "2016-01-06",
     "description": "<p>A simple game about a simple spaceship.</p>",
     "textClass": "white-text",
-    "imgURL": "styles/images/blueBG.png",
-    "imgTWO": "styles/images/greyShip.png"
+    "imgURL": "styles/images/gsgScreen.png",
+    "imgTWO": ""
   },
   {
     "title": "Finding the Sun",
@@ -14,8 +14,8 @@
     "publishedDate": "TBA",
     "description": "<p>Jump, climb and swing your way to adventure.</p>",
     "textClass": "white-text",
-    "imgURL": "styles/images/blueBG.png",
-    "imgTWO": "styles/images/greyShip.png"
+    "imgURL": "styles/images/ftsScreen.png",
+    "imgTWO": ""
   },
   {
     "title": "2D Dodgeball",
@@ -23,8 +23,8 @@
     "publishedDate": "TBA",
     "description": "<p>This game barely works.</p>",
     "textClass": "white-text",
-    "imgURL": "styles/images/blueBG.png",
-    "imgTWO": "styles/images/greyShip.png"
+    "imgURL": "",
+    "imgTWO": ""
   },
   {
     "title": "Who really knows?",
@@ -32,7 +32,7 @@
     "publishedDate": "TBA",
     "description": "<p>An imaginary game that does not exist yet.</p>",
     "textClass": "white-text",
-    "imgURL": "styles/images/blueBG.png",
-    "imgTWO": "styles/images/greyShip.png"
+    "imgURL": "",
+    "imgTWO": ""
   }
 ]

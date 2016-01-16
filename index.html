@@ -6,6 +6,7 @@
     <title>Paul Sheridan</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/skeleton.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -35,25 +36,48 @@
         </ul>
       </nav>
     </header>
-    <banner class="intro">
-      <h1>Hi, I'm Paul.</h1>
-      <p>Maybe someday I'll thinkof something to put here.</p>
-    </banner>
-    <main>
-      <section class="about-me">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilis sunt tempora repellendus, veritatis rerum eveniet iure deserunt, quam nam saepe alias, nulla sequi perferendis, corporis dolor. Molestias, illum, amet?</p>
+    <main class="container">
+      <banner class="intro-banner twelve columns row">
+        <h1>Hi, I'm Paul.</h1>
+        <p>Maybe someday I'll think of something to put here.</p>
+      </banner>
+      <section id="about-me" class="row about-me twelve columns">
+        <h3>More placeholder text!</h3>
+        <div class="three columns education">
+          <h4>Education</h4>
+          <ul>
+            <li>Western Washington University</li>
+            <li>Code Fellows</li>
+          </ul>
+        </div>
+        <div class="five columns">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilis sunt tempora repellendus, veritatis rerum eveniet iure deserunt, quam nam saepe alias, nulla sequi perferendis, corporis dolor. Molestias, illum, amet?</p>
+        </div>
+        <div class="three columns experience">
+          <h4>Experience</h4>
+          <ul>
+            <li>Big Fish Games</li>
+            <li>Tableau</li>
+            <li>Apple, Inc.</li>
+          </ul>
+        </div>
+        <!-- <ul id="social-icons" class="">
+          <li><a href="https://github.com/paulsheridan"><img src="styles/images/github.svg" alt=""></a></li>
+          <li><a href="https://twitter.com/borealisrex"><img src="styles/images/twitter.svg" alt=""></a></li>
+          <li><a href="https://www.linkedin.com/profile/view?id=AAMAAAaUkqMBGM8RAgL645A7TCIVeNPy2yDCLHA&trk=hp-identity-name"><img src="styles/images/linkedin.svg" alt=""></a></li>
+        </ul> -->
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
+        <h3>My Work</h3>
       </section>
     </main>
     <footer>
       <h2>Get at me</h2>
-      <ul class="contact" >
-        <li><a href="https://github.com/paulsheridan"><img src="styles/images/github-circle-black.svg" alt=""></a></li>
-        <li><a href="https://twitter.com/borealisrex"><img src="styles/images/twitter-circle-black.svg" alt=""></a></li>
-        <li><a href="https://www.linkedin.com/profile/view?id=AAMAAAaUkqMBGM8RAgL645A7TCIVeNPy2yDCLHA&trk=hp-identity-name"><img src="styles/images/linkedin-circle-black.svg" alt=""></a></li>
-        <li><a href="mailto:paulsemail@me.com">Email</a></li>
+      <ul class="contact" id="contact">
+        <li><a href="https://github.com/paulsheridan"><img src="styles/images/github.svg" alt=""></a></li>
+        <li><a href="https://twitter.com/borealisrex"><img src="styles/images/twitter.svg" alt=""></a></li>
+        <li><a href="https://www.linkedin.com/profile/view?id=AAMAAAaUkqMBGM8RAgL645A7TCIVeNPy2yDCLHA&trk=hp-identity-name"><img src="styles/images/linkedin.svg" alt=""></a></li>
+        <li><a href="mailto:paulsemail@me.com"><img src="styles/images/mail.svg" alt=""></a></li>
       </ul>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>

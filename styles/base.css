@@ -1,0 +1,11 @@
+* {
+  outline: dotted 1px orange;
+}
+
+body p {
+  color: rgb(44, 62, 80);
+}
+
+.template {
+  display: none;
+}

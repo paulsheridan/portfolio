@@ -5,8 +5,9 @@ ul {
 
 footer {
   font-family: 'Raleway', sans-serif;
-  background-color: rgb(44, 62, 80);
-  color: rgb(255, 255, 255);;
+  background-color: rgb(69, 69, 69);
+  color: rgb(255, 255, 255);
+  position: relative;
 }
 
 .header-content {
@@ -77,10 +78,25 @@ footer {
 }
 
 #social-icons img {
-  padding-top: 1em;
   height: 2em;
   width: 2em;
 }
+
+#social-icons li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#social-icons ul {
+  text-align: center;
+}
+
+#footer-deco {
+  /*position: absolute;*/
+  width: 100%;
+
+};
 
 @media screen and (min-width: 640px) {
 

@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <script id="project-template" type="text/x-handlebars-template">
-      <article class="{{textClass}}">
+      <article class="{{textClass}} project">
         <div>
           <h2 class="title">{{title}}</h2>
-          <a href="{{projectURL}}" class="project-link">{{projectURL}}</a>
           <p class="published">Published: <time>{{publishedDate}}</time></p>
           <p class="description">{{{description}}}</p>
+          <a href="{{projectURL}}" class="button button-primary">Play It</a>
+          <a href="{{projectURL}}" class="button">View on Github</a>
         </div>
         <ul class="project-images">
           <li><a href="" class="background-image"><img src="{{imgURL}}" alt=""></a></li>

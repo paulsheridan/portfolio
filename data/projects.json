@@ -5,7 +5,7 @@
     "publishedDate": "2016-01-06",
     "description": "<p>A simple game about a simple spaceship.</p>",
     "textClass": "white-text",
-    "imgURL": "styles/images/gsgScreen.png",
+    "imgURL": "styles/images/ftsScreen.png",
     "imgTWO": ""
   },
   {
@@ -23,7 +23,7 @@
     "publishedDate": "TBA",
     "description": "<p>This game barely works.</p>",
     "textClass": "white-text",
-    "imgURL": "",
+    "imgURL": "styles/images/ftsScreen.png",
     "imgTWO": ""
   },
   {
@@ -32,7 +32,7 @@
     "publishedDate": "TBA",
     "description": "<p>An imaginary game that does not exist yet.</p>",
     "textClass": "white-text",
-    "imgURL": "",
+    "imgURL": "styles/images/ftsScreen.png",
     "imgTWO": ""
   }
 ]

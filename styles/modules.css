@@ -69,15 +69,12 @@ footer {
   opacity: .50;
 }
 
-.about-me h3 {
+.about-me {
   text-align: center;
 }
 
-.about-me .education {
-  text-align: right;
-}
-
 #social-icons img {
+  padding: 0 2em;
   height: 2em;
   width: 2em;
 }
@@ -116,5 +113,13 @@ footer {
     margin-right: 1em;
     float: right;
     display: inline-block;
+  }
+
+  .about-me .education {
+    text-align: right;
+  }
+
+  .about-me .experience {
+    text-align: left;
   }
 }

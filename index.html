@@ -13,17 +13,16 @@
     <link rel="stylesheet" href="styles/modules.css">
     <script id="project-template" type="text/x-handlebars-template">
       <article class="{{textClass}} project">
-        <div>
-          <h2 class="title">{{title}}</h2>
+        <div id="project-text">
+          <h3 class="title">{{title}}</h3>
           <p class="published">Published: <time>{{publishedDate}}</time></p>
           <p class="description">{{{description}}}</p>
-          <a href="{{projectURL}}" class="button button-primary">Play It</a>
-          <a href="{{projectURL}}" class="button">View on Github</a>
         </div>
-        <ul class="project-images">
-          <li><a href="" class="background-image"><img src="{{imgURL}}" alt=""></a></li>
-          <li><a href="" class="foreground-image"><img src="{{imgTWO}}" alt=""></a></li>
-        </ul>
+        <div id="project-buttons" class="five columns offset-by-seven">
+          <a href="{{projectURL}}" class="button button-primary">Play It</a>
+          <a href="{{githubURL}}" class="button">View on Github</a>
+        </div>
+        <img src="{{imgURL}}" alt="">
       </article>
     </script>
   </head>

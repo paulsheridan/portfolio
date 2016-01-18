@@ -1,15 +1,17 @@
 [
   {
     "title": "Go Ship Go",
+    "githubURL": "https://github.com/paulsheridan/go-ship-go",
     "projectURL": "https://github.com/paulsheridan/go-ship-go",
     "publishedDate": "2016-01-06",
     "description": "<p>A simple game about a simple spaceship.</p>",
     "textClass": "white-text",
-    "imgURL": "styles/images/gsgScreen.png",
+    "imgURL": "styles/images/ftsScreen.png",
     "imgTWO": ""
   },
   {
     "title": "Finding the Sun",
+    "githubURL": "https://github.com/paulsheridan/go-ship-go",
     "projectURL": "https://github.com/paulsheridan/finding-the-sun",
     "publishedDate": "TBA",
     "description": "<p>Jump, climb and swing your way to adventure.</p>",
@@ -19,20 +21,22 @@
   },
   {
     "title": "2D Dodgeball",
+    "githubURL": "https://github.com/paulsheridan/go-ship-go",
     "projectURL": "https://github.com/paulsheridan/go-ship-go",
     "publishedDate": "TBA",
     "description": "<p>This game barely works.</p>",
     "textClass": "white-text",
-    "imgURL": "",
+    "imgURL": "styles/images/ftsScreen.png",
     "imgTWO": ""
   },
   {
     "title": "Who really knows?",
+    "githubURL": "https://github.com/paulsheridan/go-ship-go",
     "projectURL": "https://github.com/paulsheridan/go-ship-go",
     "publishedDate": "TBA",
     "description": "<p>An imaginary game that does not exist yet.</p>",
     "textClass": "white-text",
-    "imgURL": "",
+    "imgURL": "styles/images/ftsScreen.png",
     "imgTWO": ""
   }
 ]

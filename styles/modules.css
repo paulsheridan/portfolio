@@ -61,6 +61,37 @@ footer {
   color: rgb(34, 83, 120);
 }
 
+.project {
+  height: 45em;
+  position: relative;
+}
+
+#project-text {
+  position: absolute;
+  margin: 1em;
+  z-index: 100;
+}
+
+#project-buttons {
+  top: 75%;
+  position: absolute;
+  z-index: 100;
+}
+
+#project-buttons a {
+  margin-right: 1em;
+  float: right;
+}
+
+.project img {
+  width: 100%;
+  z-index: 30;
+}
+
+.white-text * {
+  color: rgb(255, 255, 255);
+}
+
 .contact a {
   transition: .3s opacity;
 }
@@ -69,15 +100,12 @@ footer {
   opacity: .50;
 }
 
-.about-me h3 {
+.about-me {
   text-align: center;
 }
 
-.about-me .education {
-  text-align: right;
-}
-
 #social-icons img {
+  padding: 0 2em;
   height: 2em;
   width: 2em;
 }
@@ -116,5 +144,13 @@ footer {
     margin-right: 1em;
     float: right;
     display: inline-block;
+  }
+
+  .about-me .education {
+    text-align: right;
+  }
+
+  .about-me .experience {
+    text-align: left;
   }
 }

@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <script id="project-template" type="text/x-handlebars-template">
-      <article class="{{textClass}} project">
-        <div id="project-text">
+      <article class="project">
+        <div id="project-text" class="{{textClass}}">
           <h3 class="title">{{title}}</h3>
           <p class="published">Published: <time>{{publishedDate}}</time></p>
           <p class="description">{{{description}}}</p>
         </div>
-        <div id="project-buttons" class="five columns offset-by-seven">
+        <img src="{{imgURL}}" alt="">
+        <div id="project-buttons" class="twelve columns">
           <a href="{{projectURL}}" class="button button-primary">Play It</a>
           <a href="{{githubURL}}" class="button">View on Github</a>
         </div>
-        <img src="{{imgURL}}" alt="">
       </article>
     </script>
   </head>
@@ -42,7 +42,7 @@
         <p>Maybe someday I'll think of something to put here.</p>
       </banner>
       <section id="about-me" class="about-me row">
-        <h3>More placeholder text!</h3>
+        <!-- <h3>More placeholder text!</h3> -->
         <div class="three columns education">
           <h4>Education</h4>
           <ul>
@@ -50,7 +50,7 @@
             <li>Code Fellows</li>
           </ul>
         </div>
-        <div class="five columns">
+        <div class="six columns">
           <h4>About Me</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilis sunt tempora repellendus, veritatis rerum eveniet iure deserunt, quam nam saepe alias, nulla sequi perferendis, corporis dolor. Molestias, illum, amet?</p>
         </div>

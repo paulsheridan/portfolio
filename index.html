@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width", initial-scale="1">
     <title>Paul Sheridan</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="vendor/skeleton.css">
+    <link rel="stylesheet" href="styles/vendor/normalize.css">
+    <link rel="stylesheet" href="styles/vendor/skeleton.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -30,9 +30,8 @@
     <header class="header-content">
       <nav class="nav-bar">
         <ul>
-          <li class="tab" data-content="about-me"><a href="#about-me" class="">About Me</a></li>
-          <li class="tab" data-content="portfolio"><a href="#portfolio" class="">Portfolio</a></li>
-          <li class="tab" data-content="contact"><a href="#contact" class="">Contact</a></li>
+          <li class="tab" data-content="about-me"><a href="/about-me" class="">About Me</a></li>
+          <li class="tab" data-content="portfolio"><a href="/portfolio" class="">Portfolio</a></li>
         </ul>
       </nav>
     </header>
@@ -41,7 +40,7 @@
         <h1>Hi, I'm Paul.</h1>
         <p>Maybe someday I'll think of something to put here.</p>
       </banner>
-      <section id="about-me" class="about-me row">
+      <section id="about-me" class="tab-content">
         <h3>More placeholder text!</h3>
         <div class="three columns education">
           <h4>Education</h4>
@@ -68,7 +67,7 @@
           <li><a href="https://www.linkedin.com/profile/view?id=AAMAAAaUkqMBGM8RAgL645A7TCIVeNPy2yDCLHA&trk=hp-identity-name"><img src="styles/images/linkedin.svg" alt=""></a></li>
         </ul>
       </section>
-      <section class="portfolio row" id="portfolio">
+      <section class="tab-content" id="portfolio">
         <h3>My Work</h3>
       </section>
     </main>
@@ -83,8 +82,10 @@
       </ul>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+      <script src="scripts/vendor/page.js"></script>
       <script src="scripts/app.js"></script>
       <script src="scripts/viewManager.js"></script>
+      <script src="scripts/routes.js"></script>
       <script src="scripts/invoke.js"></script>
     </footer>
   </body>

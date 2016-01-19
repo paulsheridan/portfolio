@@ -18,25 +18,5 @@
     "textClass": "white-text",
     "imgURL": "styles/images/ftsScreen.png",
     "imgTWO": ""
-  },
-  {
-    "title": "2D Dodgeball",
-    "githubURL": "https://github.com/paulsheridan/go-ship-go",
-    "projectURL": "https://github.com/paulsheridan/go-ship-go",
-    "publishedDate": "TBA",
-    "description": "<p>This game barely works.</p>",
-    "textClass": "white-text",
-    "imgURL": "styles/images/ftsScreen.png",
-    "imgTWO": ""
-  },
-  {
-    "title": "Who really knows?",
-    "githubURL": "https://github.com/paulsheridan/go-ship-go",
-    "projectURL": "https://github.com/paulsheridan/go-ship-go",
-    "publishedDate": "TBA",
-    "description": "<p>An imaginary game that does not exist yet.</p>",
-    "textClass": "white-text",
-    "imgURL": "styles/images/ftsScreen.png",
-    "imgTWO": ""
   }
 ]

@@ -7,7 +7,7 @@ footer {
   font-family: 'Raleway', sans-serif;
   background-color: rgb(69, 69, 69);
   color: rgb(255, 255, 255);
-  /*position: relative;*/
+  position: relative;
 }
 
 .header-content {
@@ -58,8 +58,14 @@ footer {
 }
 
 .project {
-  height: 45em; /*this is what's screwing up the vertical space in mobile*/
   position: relative;
+  margin-bottom: 4em;
+}
+
+#project-picture {
+  positon: absolute;
+  width: 100%;
+  z-index: 30;
 }
 
 #project-text {
@@ -71,11 +77,6 @@ footer {
 #project-buttons a {
   margin-left: 1em;
   float: right;
-}
-
-.project img {
-  width: 100%;
-  z-index: 30;
 }
 
 .white-text p {
@@ -120,7 +121,7 @@ footer {
   position: absolute;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 
   .nav-bar a {
     display: block;

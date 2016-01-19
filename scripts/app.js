@@ -32,10 +32,8 @@
           var neweTag = xhr.getResponseHeader('ETag');
           if(neweTag === localStorage.savedeTag) {
             Project.loadAll(JSON.parse(localStorage.rawData));
-            console.log('no change');
             pageView.initPage();
           } else {
-            console.log('metadata change');
             $.getJSON("data/projects.json", function(rawData){
               Project.loadAll(rawData);
               localStorage.rawData = JSON.stringify(rawData);
@@ -46,7 +44,6 @@
         },
       })
     } else {
-      console.log('no metadata')
       $.getJSON("data/projects.json", function(data, message, xhr){
         Project.loadAll(data);
         localStorage.rawData = JSON.stringify(data);

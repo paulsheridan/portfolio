@@ -5,13 +5,13 @@ ul {
 
 footer {
   font-family: 'Raleway', sans-serif;
-  background-color: rgb(69, 69, 69);
   color: rgb(255, 255, 255);
   position: relative;
+  margin-top: 4em;
 }
 
 .header-content {
-  background-color: rgb(46, 46, 46);
+  background-color: rgb(0, 216, 255);
   width: 100%;
   display: block;
   height: 3.1em;
@@ -41,7 +41,7 @@ footer {
 }
 
 .nav-bar a:hover {
-  color: rgb(52, 152, 219);
+  color: rgb(46, 46, 46);
 }
 
 .container{
@@ -50,7 +50,6 @@ footer {
 
 .intro-banner {
   text-align: center;
-  margin-bottom: 10
 }
 
 .intro-banner p {
@@ -87,14 +86,6 @@ footer {
   color: rgb(255, 255, 255);
 }
 
-.contact a {
-  transition: .3s opacity;
-}
-
-.contact a:hover {
-  opacity: .50;
-}
-
 .about-me {
   text-align: center;
 }
@@ -116,12 +107,30 @@ footer {
 }
 
 #footer-deco {
-  bottom: 8.1em;
   width: 100%;
   position: absolute;
+  bottom: 0px;
+  z-index: 10;
+}
+
+#footer-text {
+  z-index: 100;
+  background-color: rgb(69, 69, 69);
+}
+
+.contact a {
+  transition: .3s opacity;
+}
+
+.contact a:hover {
+  opacity: .50;
 }
 
 @media screen and (min-width: 768px) {
+
+  footer {
+    margin-top: 8em;
+  }
 
   .nav-bar a {
     display: block;
@@ -148,5 +157,16 @@ footer {
 
   .about-me .experience {
     text-align: left;
+  }
+
+  #footer-deco {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  footer {
+    margin-top: 12em;
   }
 }

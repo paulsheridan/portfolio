@@ -108,7 +108,7 @@ footer {
 
 #footer-deco {
   width: 100%;
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0px;
   z-index: 10;
 }
@@ -116,6 +116,11 @@ footer {
 #footer-text {
   z-index: 100;
   background-color: rgb(69, 69, 69);
+  pad: 0;
+}
+
+#footer-text ul {
+  margin: 0;
 }
 
 .contact a {
@@ -161,6 +166,7 @@ footer {
 
   #footer-deco {
     width: 100%;
+    position: absolute;
   }
 }
 

@@ -1,2 +1,2 @@
 # portfolio
-A personal portfolio of my work.
+A portfolio of my work.

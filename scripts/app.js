@@ -21,7 +21,7 @@
     rawData.forEach(function(ele) {
       Project.all.push(new Project(ele));
     });
-  }
+  };
 
   Project.fetchAll = function() {
     if (localStorage.rawData) {
@@ -34,23 +34,23 @@
             Project.loadAll(JSON.parse(localStorage.rawData));
             pageView.initPage();
           } else {
-            $.getJSON("data/projects.json", function(rawData){
+            $.getJSON('data/projects.json', function(rawData){
               Project.loadAll(rawData);
               localStorage.rawData = JSON.stringify(rawData);
               localStorage.savedeTag = neweTag;
               pageView.initPage();
-            })
+            });
           }
         },
-      })
+      });
     } else {
-      $.getJSON("data/projects.json", function(data, message, xhr){
+      $.getJSON('data/projects.json', function(data, message, xhr){
         Project.loadAll(data);
         localStorage.rawData = JSON.stringify(data);
         localStorage.savedeTag = xhr.getResponseHeader('ETag');
         pageView.initPage();
-      })
+      });
     }
-  }
+  };
   module.Project = Project;
 })(window);

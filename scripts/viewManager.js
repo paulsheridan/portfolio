@@ -1,5 +1,5 @@
 (function(module) {
-  pageView = {};
+  var pageView = {};
 
   pageView.initPage = function(){
     Project.all.forEach(function(a){

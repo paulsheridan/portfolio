@@ -23,6 +23,15 @@
     });
   }
 
+  Project.numWordsDesc = function() {
+    return Project.all.map(function(project) {
+      return project.description.match(/\b\w+/g).length;
+    })
+    .reduce(function(a, b) {
+      return a + b;
+    });
+  };
+
   Project.fetchAll = function() {
     if (localStorage.rawData) {
       $.ajax({

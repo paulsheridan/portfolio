@@ -5,6 +5,7 @@
     Project.all.forEach(function(a){
       $('#portfolio').append(a.postProj());
     });
+    $('#silly-stats').text(Project.numWordsDesc());
   };
 
   $(function() {

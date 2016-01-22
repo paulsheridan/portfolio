@@ -12,7 +12,7 @@
 
   Project.createTable = function(callback) {
     webDB.execute(
-      'CREATE TABLE IF NOT EXISTS projects (id INTEGER PRIMARY KEY, title VARCHAR(50) NOT NULL, githubURL VARCHAR(50) NOT NULL, projectURL VARCHAR (50) NOT NULL, publishedDate DATETIME NOT NULL, description TEXT NOT NULL, body TEXT NOT NULL, imgURL VARCHAR (50), textClass VARCHAR (50) NOT NULL);',
+      'CREATE TABLE IF NOT EXISTS projects (id INTEGER PRIMARY KEY, title VARCHAR(50), githubURL VARCHAR(50), projectURL VARCHAR(50), publishedDate DATETIME, description TEXT, textClass VARCHAR (50), imgURL VARCHAR(50));',
       callback
     );
   };
@@ -23,40 +23,40 @@
     return template(this);
   };
 
-  Project.prototype.insertProj = function(callback) {
+  Project.prototype.insertProj = function (callback) {
     webDB.execute(
       [
         {
-          'sql': 'INSERT INTO projects (title, githubURL, projectURL, publishedDate, description, textClass, imageURL) VALUES (?, ?, ?, ?, ?, ?, ?);',
-          'data': [this.title, this.githubURL, this.projectURL, this.publishedDate, this.description, this.textClass, this.imageURL],
+          'sql': 'INSERT INTO projects (title, githubURL, projectURL, publishedDate, description, textClass, imgURL) VALUES (?,?,?,?,?,?,?);',
+          'data': [this.title, this.githubURL, this.projectURL, this.publishedDate, this.description, this.textClass, this.imgURL],
         }
-      ],
-      callback
-    );
-  };
+      ]
+    )
+  }
 
   Project.loadAll = function(rows) {
     Project.all = rows.map(function(ele) {
+      console.log('article all = ');
       return new Project(ele);
     });
   };
 
-  Project.fetchAll = function(callback) {
+  Project.fetchAll = function(next) {
     webDB.execute('SELECT * FROM projects ORDER BY publishedDate DESC', function(rows) {
       if (rows.length) {
         Project.loadAll(rows);
-        callback();
+        next();
       } else {
-        console.log('one');
         $.getJSON('/data/projects.json', function(rawData) {
-          console.log('two');
+          console.log(rawData);
           rawData.forEach(function(item) {
             var project = new Project(item);
+            console.log(project);
             project.insertProj();
           });
           webDB.execute('SELECT * FROM projects', function(rows) {
             Project.loadAll(rows);
-            callback();
+            next();
           });
         });
       }

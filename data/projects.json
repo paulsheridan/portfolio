@@ -7,7 +7,6 @@
     "description": "<p>A simple game about a simple spaceship.</p>",
     "textClass": "white-text",
     "imgURL": "styles/images/ftsScreen.png",
-    "imgTWO": ""
   },
   {
     "title": "Finding the Sun",
@@ -17,7 +16,6 @@
     "description": "<p>Jump, climb and swing your way to adventure.</p>",
     "textClass": "white-text",
     "imgURL": "styles/images/ftsScreen.png",
-    "imgTWO": ""
   },
   {
     "title": "2D Dodgeball",
@@ -27,7 +25,6 @@
     "description": "<p>This game barely works.</p>",
     "textClass": "white-text",
     "imgURL": "styles/images/ftsScreen.png",
-    "imgTWO": ""
   },
   {
     "title": "Who really knows?",
@@ -37,6 +34,5 @@
     "description": "<p>An imaginary game that does not exist yet.</p>",
     "textClass": "white-text",
     "imgURL": "styles/images/ftsScreen.png",
-    "imgTWO": ""
   }
 ]

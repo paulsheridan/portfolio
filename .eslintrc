@@ -3,6 +3,7 @@
 
   "env": {
     "browser": true,      // browser global variables.
+    "jquery": true,
   },
 
   "rules": {
@@ -21,7 +22,7 @@
 
 
     // Variables
-    "no-undef": 2,                   // disallow use of undeclared variables unless mentioned in a /*global */ block
+    # "no-undef": 2,                   // disallow use of undeclared variables unless mentioned in a /*global */ block
 
 
     // Stylistic Issues

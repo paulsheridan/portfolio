@@ -1,11 +1,8 @@
 (function(module) {
   function Project (details) {
-    this.title = details.title;
-    this.publishedDate = details.publishedDate;
-    this.description = details.description;
-    this.projectURL = details.projectURL;
-    this.textClass = details.textClass;
-    this.imgURL = details.imgURL;
+    Object.keys(details).forEach(function(e, index, keys) {
+      this[e] = details[e];
+    },this);
   }
 
   Project.all = [];
@@ -31,12 +28,11 @@
           'data': [this.title, this.githubURL, this.projectURL, this.publishedDate, this.description, this.textClass, this.imgURL],
         }
       ]
-    )
-  }
+    );
+  };
 
   Project.loadAll = function(rows) {
     Project.all = rows.map(function(ele) {
-      console.log('article all = ');
       return new Project(ele);
     });
   };
@@ -48,10 +44,8 @@
         next();
       } else {
         $.getJSON('/data/projects.json', function(rawData) {
-          console.log(rawData);
           rawData.forEach(function(item) {
             var project = new Project(item);
-            console.log(project);
             project.insertProj();
           });
           webDB.execute('SELECT * FROM projects', function(rows) {
@@ -62,6 +56,8 @@
       }
     });
   };
+
+  Project.createTable();
 
   module.Project = Project;
 })(window);

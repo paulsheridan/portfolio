@@ -1,5 +1,3 @@
-// Project.fetchAll();
-
 page('/', Project.fetchAll(pageView.initPage));
 
 // page('/about', );

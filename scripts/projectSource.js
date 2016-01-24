@@ -58,6 +58,7 @@
   };
 
   Project.createTable();
+  Project.fetchAll(pageView.initPage);
 
   module.Project = Project;
 })(window);

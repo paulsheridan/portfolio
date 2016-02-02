@@ -17,6 +17,10 @@ footer {
   height: 3.1em;
 }
 
+.nav-bar {
+  display: block;
+}
+
 .nav-bar ul {
   list-style: none;
   padding: 0;
@@ -45,45 +49,44 @@ footer {
 }
 
 .container{
-  margin-top: 10em;
+  /*margin-top: 10em;*/
 }
 
 .intro-banner {
+  display: block;
+  width: 100%;
+  padding-top: 10em;
+  padding-bottom: 10em;
   text-align: center;
+  /*background-color: rgb(0, 216, 255);*/
+  background-image: url(styles/images/header-deco.png);
+  background-repeat: no-repeat;
 }
 
 .intro-banner p {
-  padding-bottom: 10em;
+  display: block;
+  /*padding-bottom: 10em;*/
+}
+
+.portfolio h3 {
+  text-align: center;
 }
 
 .project {
-  position: relative;
   margin-bottom: 4em;
 }
 
 #project-picture {
-  positon: absolute;
-  width: 100%;
-  z-index: 30;
+
 }
 
 #project-text {
-  position: absolute;
-  margin: 1em;
-  z-index: 100;
+  text-align: right;
 }
 
 #project-buttons a {
   margin-left: 1em;
   float: right;
-}
-
-.white-text p {
-  color: rgb(255, 255, 255);
-}
-
-.white-text h3 {
-  color: rgb(255, 255, 255);
 }
 
 .about-me {
@@ -110,7 +113,6 @@ footer {
 
 #footer-deco {
   width: 100%;
-  /*position: absolute;*/
   bottom: 0px;
   z-index: 90;
 }

@@ -14,21 +14,21 @@
     <link rel="stylesheet" href="styles/modules.css">
     <script id="project-template" type="text/x-handlebars-template">
       <article class="project">
-        <div id="project-text" class="{{textClass}}">
-          <h3 class="title">{{title}}</h3>
+        <div class="four columns" id="project-text" class="{{textClass}}">
+          <h4 class="title">{{title}}</h4>
           <p class="published">Published: <time>{{publishedDate}}</time></p>
           <p class="description">{{description}}</p>
         </div>
-        <img id="project-picture" src="{{imgURL}}" alt="">
+        <img class="eight columns" id="project-picture" src="{{imgURL}}" alt="">
         <div id="project-buttons" class="twelve columns">
-          <a href="{{projectURL}}" class="button button-primary">Play It</a>
+          <a href="{{projectURL}}" class="button button-primary">{{buttonText}}</a>
           <a href="{{githubURL}}" class="button">View on Github</a>
         </div>
       </article>
     </script>
   </head>
   <body>
-    <header class="header-content">
+    <header class="header-content row">
       <nav class="nav-bar">
         <ul>
           <li class="tab" data-content="about-me"><a href="#about-me" class="">About Me</a></li>
@@ -36,12 +36,12 @@
           <li class="tab" data-content="contact"><a href="#contact" class="">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <main class="container">
-      <banner class="intro-banner row">
+      <banner class="intro-banner row twelve columns">
         <h1>Hi, I'm Paul.</h1>
         <p>Maybe someday I'll think of something to put here.</p>
       </banner>
+    </header>
+    <main class="container row">
       <section id="about-me" class="about-me row">
         <!-- <h3>More placeholder text!</h3> -->
         <div class="three columns education">
@@ -84,13 +84,11 @@
     </main>
     <footer class="row">
       <img id="footer-deco" src="styles/images/footer-deco.png" alt="">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-      <script src="/vendor/scripts/html5sql.js"></script>
-      <script src="/vendor/scripts/webdb.js"></script>
-      <script src="/vendor/scripts/page.js"></script>
-      <script src="/scripts/viewControl.js"></script>
-      <script src="/scripts/projectSource.js"></script>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="/vendor/scripts/page.js"></script>
+    <script src="/scripts/viewControl.js"></script>
+    <script src="/scripts/projectSource.js"></script>
   </body>
 </html>
